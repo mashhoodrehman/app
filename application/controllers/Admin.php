@@ -3,8 +3,6 @@ class Admin extends CI_Controller
 {
 	function __construct()
 	{ 
-		echo 'test';
-		return 'ok';
 	 	parent::__construct();
 	 	$this->load->helper(array('cookie','form','html','url','array','date','file'));
 	 	$this->load->library(array('form_validation','session'));
@@ -29,6 +27,8 @@ class Admin extends CI_Controller
 	}
 	function login()
 	{
+		echo 'test';
+		return 'ok';
 		$user = $this->input->post('user');
 		$password = $this->input->post('password');
 		$this->db->select('role');
