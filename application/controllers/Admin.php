@@ -27,7 +27,6 @@ class Admin extends CI_Controller
 	}
 	function login()
 	{
-		echo 'hello';exit();
 		$user = $this->input->post('user');
 		$password = $this->input->post('password');
 		$this->db->select('role');
