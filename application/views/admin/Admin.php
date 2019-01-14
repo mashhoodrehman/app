@@ -85,7 +85,7 @@
   });
 </script>
 <script type="text/javascript">
- var path="/Admin/login";
+ var path="/admin/login";
     function validateform()
     { 
       var user   = $('#username').val();
@@ -110,7 +110,7 @@
                 }
                 else
                 {
-                  window.location ='<?php echo base_url('Admin');?>';
+                  window.location ='admin';
                 }
             }
           });
