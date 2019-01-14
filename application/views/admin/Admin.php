@@ -55,7 +55,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" onclick="validateform()" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          <button type="button" onclick="validateform()" class="btn btn-primary btn-block btn-flat">Sign In</button>
         </div>
         <!-- /.col -->
       </div>
@@ -117,7 +117,6 @@
       }        
     }
     $('input').keydown(function(e) {
-      e.preventDefault();
     if (e.keyCode == 13) {
         return validateform();
     }
