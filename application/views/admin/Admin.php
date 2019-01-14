@@ -85,7 +85,7 @@
   });
 </script>
 <script type="text/javascript">
- var path="<?php echo base_url('Admin/login');?>";
+ var path="/Admin/login";
     function validateform()
     { 
       var user   = $('#username').val();
