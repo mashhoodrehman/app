@@ -3,6 +3,8 @@ class Admin extends CI_Controller
 {
 	function __construct()
 	{ 
+		echo 'test';
+		return 'ok';
 	 	parent::__construct();
 	 	$this->load->helper(array('cookie','form','html','url','array','date','file'));
 	 	$this->load->library(array('form_validation','session'));
