@@ -85,7 +85,7 @@
   });
 </script>
 <script type="text/javascript">
- var path="/admin/login";
+ var path="/Admin/login";
     function validateform()
     { 
       var user   = $('#username').val();
@@ -98,7 +98,7 @@
       else
       {
             $.ajax({
-            url: path,
+            url: "/Admin/login",
             type: "POST",
             data: {'user':user,'password':password},
             dataType: 'json',
