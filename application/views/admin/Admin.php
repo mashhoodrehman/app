@@ -36,7 +36,7 @@
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
-    <form>
+    <form method="POST" action="url('login')">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" id="username" name="username">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -85,7 +85,7 @@
   });
 </script>
 <script type="text/javascript">
- var path="/Admin/login";
+ var path="login";
     function validateform()
     { 
       var user   = $('#username').val();
@@ -98,7 +98,7 @@
       else
       {
             $.ajax({
-            url: "/Admin/login",
+            url: "login",
             type: "POST",
             data: {'user':user,'password':password},
             dataType: 'json',
